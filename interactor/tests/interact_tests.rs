@@ -10,4 +10,5 @@ async fn deploy_test_mailbox() {
     let mut interactor = ContractInteract::new(Config::new()).await;
 
     interactor.deploy().await;
+
 }
