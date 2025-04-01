@@ -9,7 +9,7 @@ use multiversx_sc::derive_imports::*; // Precisa adicionar para #[derive(...)]
 // ManagedBuffer is a wrapper around Vec<u8> | vsCode comment
 // Melhor solução para memória na blockchain da MvX, alocando na SpaceVM
 #[type_abi]
-#[derive(NestedEncode, NestedDecode, TopEncode, TopDecode)]
+#[derive(NestedEncode, NestedDecode, TopEncode, TopDecode, Debug)]
 pub struct Mail<M: ManagedTypeApi> {
     title: ManagedBuffer<M>, 
     author: ManagedAddress<M>, 

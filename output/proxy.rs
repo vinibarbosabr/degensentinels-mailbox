@@ -108,7 +108,7 @@ where
 }
 
 #[type_abi]
-#[derive(NestedEncode, NestedDecode, TopEncode, TopDecode)]
+#[derive(NestedEncode, NestedDecode, TopEncode, TopDecode, Debug)]
 pub struct Mail<Api>
 where
     Api: ManagedTypeApi,
